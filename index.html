@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <script src="js/ListItem.js"></script>
+    <script src="js/List.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="page-one">
+        <div data-role="header">
+            <div data-role="navbar" data-iconpos="left">
+                <ul>
+                    <li><a href="page-two.html" data-icon="home" data-transition="slide">Football</a></li>
+                    <li><a href="page-two.html" data-icon="search" data-transition="slide">HorseRace</a></li>
+                    <li><a href="page-two.html" data-icon="info" data-transition="slide">Snooker</a></li>
+                    <li><a href="page-two.html" data-icon="grid" data-transition="slide">Golf</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="main" class="ui-content">
+            <a href="page-two.html" data-transition="slide">Insert Content Here</a>
+            <div>
+                jQuery Mobile and Dynamic Page Generation jQuery Mobile allows pages to be pulled into the DOM dynamically via its default click hijacking behavior, or through manual calls to $.mobile.changePage(). This is great for applications that generate HTML pages/fragments on the server-side, but there are sometimes cases where an application needs to dynamically generate page content on the client-side from JSON or some other format. This may be necessary for bandwidth/performance reasons, or because it is the data format of choice for the server they are interacting with. For applications that need to generate page markup on the client-side, it's important to know about the notifications that are triggered during a $.mobile.changePage() call because they can be used as hooks into the navigation system that will allow you to generate your content at the appropriate time. A call to changePage() will usually trigger the following event notifications: pagebeforechange Fired off before any page loading or transition. NOTE: This event was formerly known as "beforechangepage". pagechange Fired off after all page loading and transitions. NOTE: this event was formerly known as "changepage". pagechangefailed Fired off if an error has occurred while attempting to dynamically load a new page. These notifications are triggered on the parent container element ($.mobile.pageContainer) of pages, and will bubble all the
+            </div>
+        </div>
+        <div data-position="fixed" data-role="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="page-two.html" data-transition="slide">Menu</a></li>
+                    <li><a href="page-two.html" data-transition="slide">A-Z</a></li>
+                    <li><a href="page-two.html" data-transition="slide">Quick</a></li>
+                    <li><a href="page-two.html" data-transition="slide">Navi</a></li>
+                    <li><a href="page-two.html" data-transition="slide">Car</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
