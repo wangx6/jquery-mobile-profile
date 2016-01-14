@@ -1,20 +1,20 @@
  /**
-     * List
-     * @param
-     * @return
-     */
+ * List
+ * @param
+ * @return
+ */
 var jqmProfile = (function( jqmProfile ) {
     'use strict';
 
-    var List = function() {
-    	this.wrap =  $('#page-two__list');
-        this.ele = $('<ul data-role="listview" data-filter="true" data-filter-placeholder="Search...">').listview();
+    var List = function( conf ) {
+    	this.wrap =  $(conf.element);
+        //this.ele = $('<ul data-role="listview" data-filter="true" data-filter-placeholder="Search...">').listview();
         this.store = [];
         this.listItems = {};
 
         this.addItem = function(item) {
-            this.ele.append(item);
-            this.ele.listview('refresh');
+            this.wrap.append(item.ele);
+            this.wrap.listview('refresh');
             this.store[item.id] = item;
         };
 

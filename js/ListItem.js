@@ -1,14 +1,8 @@
-/**
-     * ListItem
-     * @param
-     * @return
-     */
-
  /**
-     * List
-     * @param
-     * @return
-     */
+ * List
+ * @param
+ * @return
+ */
 var jqmProfile = (function( jqmProfile ) {
     'use strict';
 
